@@ -1,0 +1,23 @@
+program: run.py 
+method: random #bayes #"random" --> Random search
+metric: 
+    name: val_loss
+    goal: minimize
+parameters: 
+    batch_size: 
+        distribution: int_uniform 
+        min: 128
+        max: 512
+    lr: 
+        # log uniform distribution between exp(min) and exp(max)
+        distribution: log_uniform
+        min : -9.21 # exp(-9.21) = 1e-4
+        max : -4.61    # exp(-4.61) = 1e-2
+    epochs: 
+        distribution: int_uniform
+        min: 90
+        max: 150
+    optimizer:
+        values: ["MuAdam", "MuSGD", "MuAdamW"]
+    lr_scheduler: 
+        values: ["step", "reduce_plateau", "linear", "cosineAnnealing", "ConsineAnl_warmup"]

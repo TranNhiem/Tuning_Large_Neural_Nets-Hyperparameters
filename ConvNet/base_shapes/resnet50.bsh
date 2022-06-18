@@ -1,0 +1,485 @@
+# This is a base shape file encoded in yaml
+# - `null` indicates a dimension is "finite", i.e. a non-"width" dimension
+# - a number indicates the base dimension of an "infinite" dimension, i.e. some notion of "width"
+bn1.bias:
+- 64
+bn1.weight:
+- 64
+conv1.weight:
+- 64
+- null
+- null
+- null
+layer1.0.bn1.bias:
+- 64
+layer1.0.bn1.weight:
+- 64
+layer1.0.bn2.bias:
+- 64
+layer1.0.bn2.weight:
+- 64
+layer1.0.bn3.bias:
+- 256
+layer1.0.bn3.weight:
+- 256
+layer1.0.conv1.weight:
+- 64
+- 64
+- null
+- null
+layer1.0.conv2.weight:
+- 64
+- 64
+- null
+- null
+layer1.0.conv3.weight:
+- 256
+- 64
+- null
+- null
+layer1.0.shortcut.0.weight:
+- 256
+- 64
+- null
+- null
+layer1.0.shortcut.1.bias:
+- 256
+layer1.0.shortcut.1.weight:
+- 256
+layer1.1.bn1.bias:
+- 64
+layer1.1.bn1.weight:
+- 64
+layer1.1.bn2.bias:
+- 64
+layer1.1.bn2.weight:
+- 64
+layer1.1.bn3.bias:
+- 256
+layer1.1.bn3.weight:
+- 256
+layer1.1.conv1.weight:
+- 64
+- 256
+- null
+- null
+layer1.1.conv2.weight:
+- 64
+- 64
+- null
+- null
+layer1.1.conv3.weight:
+- 256
+- 64
+- null
+- null
+layer1.2.bn1.bias:
+- 64
+layer1.2.bn1.weight:
+- 64
+layer1.2.bn2.bias:
+- 64
+layer1.2.bn2.weight:
+- 64
+layer1.2.bn3.bias:
+- 256
+layer1.2.bn3.weight:
+- 256
+layer1.2.conv1.weight:
+- 64
+- 256
+- null
+- null
+layer1.2.conv2.weight:
+- 64
+- 64
+- null
+- null
+layer1.2.conv3.weight:
+- 256
+- 64
+- null
+- null
+layer2.0.bn1.bias:
+- 128
+layer2.0.bn1.weight:
+- 128
+layer2.0.bn2.bias:
+- 128
+layer2.0.bn2.weight:
+- 128
+layer2.0.bn3.bias:
+- 512
+layer2.0.bn3.weight:
+- 512
+layer2.0.conv1.weight:
+- 128
+- 256
+- null
+- null
+layer2.0.conv2.weight:
+- 128
+- 128
+- null
+- null
+layer2.0.conv3.weight:
+- 512
+- 128
+- null
+- null
+layer2.0.shortcut.0.weight:
+- 512
+- 256
+- null
+- null
+layer2.0.shortcut.1.bias:
+- 512
+layer2.0.shortcut.1.weight:
+- 512
+layer2.1.bn1.bias:
+- 128
+layer2.1.bn1.weight:
+- 128
+layer2.1.bn2.bias:
+- 128
+layer2.1.bn2.weight:
+- 128
+layer2.1.bn3.bias:
+- 512
+layer2.1.bn3.weight:
+- 512
+layer2.1.conv1.weight:
+- 128
+- 512
+- null
+- null
+layer2.1.conv2.weight:
+- 128
+- 128
+- null
+- null
+layer2.1.conv3.weight:
+- 512
+- 128
+- null
+- null
+layer2.2.bn1.bias:
+- 128
+layer2.2.bn1.weight:
+- 128
+layer2.2.bn2.bias:
+- 128
+layer2.2.bn2.weight:
+- 128
+layer2.2.bn3.bias:
+- 512
+layer2.2.bn3.weight:
+- 512
+layer2.2.conv1.weight:
+- 128
+- 512
+- null
+- null
+layer2.2.conv2.weight:
+- 128
+- 128
+- null
+- null
+layer2.2.conv3.weight:
+- 512
+- 128
+- null
+- null
+layer2.3.bn1.bias:
+- 128
+layer2.3.bn1.weight:
+- 128
+layer2.3.bn2.bias:
+- 128
+layer2.3.bn2.weight:
+- 128
+layer2.3.bn3.bias:
+- 512
+layer2.3.bn3.weight:
+- 512
+layer2.3.conv1.weight:
+- 128
+- 512
+- null
+- null
+layer2.3.conv2.weight:
+- 128
+- 128
+- null
+- null
+layer2.3.conv3.weight:
+- 512
+- 128
+- null
+- null
+layer3.0.bn1.bias:
+- 256
+layer3.0.bn1.weight:
+- 256
+layer3.0.bn2.bias:
+- 256
+layer3.0.bn2.weight:
+- 256
+layer3.0.bn3.bias:
+- 1024
+layer3.0.bn3.weight:
+- 1024
+layer3.0.conv1.weight:
+- 256
+- 512
+- null
+- null
+layer3.0.conv2.weight:
+- 256
+- 256
+- null
+- null
+layer3.0.conv3.weight:
+- 1024
+- 256
+- null
+- null
+layer3.0.shortcut.0.weight:
+- 1024
+- 512
+- null
+- null
+layer3.0.shortcut.1.bias:
+- 1024
+layer3.0.shortcut.1.weight:
+- 1024
+layer3.1.bn1.bias:
+- 256
+layer3.1.bn1.weight:
+- 256
+layer3.1.bn2.bias:
+- 256
+layer3.1.bn2.weight:
+- 256
+layer3.1.bn3.bias:
+- 1024
+layer3.1.bn3.weight:
+- 1024
+layer3.1.conv1.weight:
+- 256
+- 1024
+- null
+- null
+layer3.1.conv2.weight:
+- 256
+- 256
+- null
+- null
+layer3.1.conv3.weight:
+- 1024
+- 256
+- null
+- null
+layer3.2.bn1.bias:
+- 256
+layer3.2.bn1.weight:
+- 256
+layer3.2.bn2.bias:
+- 256
+layer3.2.bn2.weight:
+- 256
+layer3.2.bn3.bias:
+- 1024
+layer3.2.bn3.weight:
+- 1024
+layer3.2.conv1.weight:
+- 256
+- 1024
+- null
+- null
+layer3.2.conv2.weight:
+- 256
+- 256
+- null
+- null
+layer3.2.conv3.weight:
+- 1024
+- 256
+- null
+- null
+layer3.3.bn1.bias:
+- 256
+layer3.3.bn1.weight:
+- 256
+layer3.3.bn2.bias:
+- 256
+layer3.3.bn2.weight:
+- 256
+layer3.3.bn3.bias:
+- 1024
+layer3.3.bn3.weight:
+- 1024
+layer3.3.conv1.weight:
+- 256
+- 1024
+- null
+- null
+layer3.3.conv2.weight:
+- 256
+- 256
+- null
+- null
+layer3.3.conv3.weight:
+- 1024
+- 256
+- null
+- null
+layer3.4.bn1.bias:
+- 256
+layer3.4.bn1.weight:
+- 256
+layer3.4.bn2.bias:
+- 256
+layer3.4.bn2.weight:
+- 256
+layer3.4.bn3.bias:
+- 1024
+layer3.4.bn3.weight:
+- 1024
+layer3.4.conv1.weight:
+- 256
+- 1024
+- null
+- null
+layer3.4.conv2.weight:
+- 256
+- 256
+- null
+- null
+layer3.4.conv3.weight:
+- 1024
+- 256
+- null
+- null
+layer3.5.bn1.bias:
+- 256
+layer3.5.bn1.weight:
+- 256
+layer3.5.bn2.bias:
+- 256
+layer3.5.bn2.weight:
+- 256
+layer3.5.bn3.bias:
+- 1024
+layer3.5.bn3.weight:
+- 1024
+layer3.5.conv1.weight:
+- 256
+- 1024
+- null
+- null
+layer3.5.conv2.weight:
+- 256
+- 256
+- null
+- null
+layer3.5.conv3.weight:
+- 1024
+- 256
+- null
+- null
+layer4.0.bn1.bias:
+- 512
+layer4.0.bn1.weight:
+- 512
+layer4.0.bn2.bias:
+- 512
+layer4.0.bn2.weight:
+- 512
+layer4.0.bn3.bias:
+- 2048
+layer4.0.bn3.weight:
+- 2048
+layer4.0.conv1.weight:
+- 512
+- 1024
+- null
+- null
+layer4.0.conv2.weight:
+- 512
+- 512
+- null
+- null
+layer4.0.conv3.weight:
+- 2048
+- 512
+- null
+- null
+layer4.0.shortcut.0.weight:
+- 2048
+- 1024
+- null
+- null
+layer4.0.shortcut.1.bias:
+- 2048
+layer4.0.shortcut.1.weight:
+- 2048
+layer4.1.bn1.bias:
+- 512
+layer4.1.bn1.weight:
+- 512
+layer4.1.bn2.bias:
+- 512
+layer4.1.bn2.weight:
+- 512
+layer4.1.bn3.bias:
+- 2048
+layer4.1.bn3.weight:
+- 2048
+layer4.1.conv1.weight:
+- 512
+- 2048
+- null
+- null
+layer4.1.conv2.weight:
+- 512
+- 512
+- null
+- null
+layer4.1.conv3.weight:
+- 2048
+- 512
+- null
+- null
+layer4.2.bn1.bias:
+- 512
+layer4.2.bn1.weight:
+- 512
+layer4.2.bn2.bias:
+- 512
+layer4.2.bn2.weight:
+- 512
+layer4.2.bn3.bias:
+- 2048
+layer4.2.bn3.weight:
+- 2048
+layer4.2.conv1.weight:
+- 512
+- 2048
+- null
+- null
+layer4.2.conv2.weight:
+- 512
+- 512
+- null
+- null
+layer4.2.conv3.weight:
+- 2048
+- 512
+- null
+- null
+linear.bias:
+- null
+linear.weight:
+- null
+- 2048
