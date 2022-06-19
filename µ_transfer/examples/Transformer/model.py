@@ -6,7 +6,10 @@ import torch.nn.functional as F
 from mup import MuReadout, MuSharedReadout
 
 '''
-The only things we modified from the original pytorch Transformer example are 1) replace the readout layer with MuReadout or MuSharedReadout, 2) use fan_in style initialization, and 3) change attention scaling to 1/d instead of 1/sqrt(d)
+The only things we modified from the original pytorch Transformer example are 
+1) replace the readout layer with MuReadout or MuSharedReadout, 
+2) use fan_in style initialization, and 
+3) change attention scaling to 1/d instead of 1/sqrt(d)
 '''
 
 def init_method_normal(sigma):
